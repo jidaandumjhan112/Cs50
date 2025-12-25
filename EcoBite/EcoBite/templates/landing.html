@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoBite • Share Food, Save Waste</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='images/hero-image.png') }}">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="landing-page">
+
+  <div class="landing-container">
+
+    <!-- Navigation -->
+    <nav class="landing-nav">
+      <a href="/" class="landing-logo">
+        <span>🌿</span> EcoBite
+      </a>
+      <div class="nav-links">
+        <a href="{{ url_for('auth.login') }}" class="btn-login">Log In</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-badge">✨ Join 2,000+ Food Savers</div>
+      <h1 class="hero-title">
+        Share Food.<br>
+        <span>Save the Planet.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Connect with your neighbors to share surplus food, reduce waste, and build a sustainable community together.
+      </p>
+      <div class="hero-cta-group">
+        <a href="{{ url_for('auth.get_started') }}" class="btn-primary-lg">Get Started →</a>
+        <a href="#how-it-works" class="btn-secondary-lg">How it Works</a>
+      </div>
+
+      <!-- Impact Stats (Gamified) -->
+      <div class="impact-section">
+        <div class="impact-card">
+          <div class="impact-icon">🍱</div>
+          <div class="impact-number">12,500+</div>
+          <div class="impact-label">Meals Saved</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🌱</div>
+          <div class="impact-number">25,000kg</div>
+          <div class="impact-label">CO₂ Prevented</div>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">👥</div>
+          <div class="impact-number">2,400+</div>
+          <div class="impact-label">Community Members</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / How It Works -->
+    <section id="how-it-works" class="features-section">
+      <div class="section-header">
+        <h2 class="section-title">How EcoBite Works</h2>
+        <p class="hero-subtitle" style="margin-bottom:0">Simple steps to make a big impact.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-box">📸</div>
+          <h3 class="feature-title">1. Post Food</h3>
+          <p class="feature-desc">Snap a photo of your surplus food. Add a quick description and pickup time.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-box">💬</div>
+          <h3 class="feature-title">2. Connect</h3>
+          <p class="feature-desc">Neighbors request your item. Chat securely to arrange a smooth pickup.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-box">🏆</div>
+          <h3 class="feature-title">3. Earn Badges</h3>
+          <p class="feature-desc">Get recognized for your impact! Earn badges and climb the leaderboard.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="landing-footer">
+      <p>&copy; 2025 EcoBite. Built for a greener future.</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
